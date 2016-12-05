@@ -25,11 +25,30 @@ function is_divisible_by_15(number){
   }
 }
 
-function is_divisible_by_number(number,divisor){
+function FizzBuzz(){
+
+}
+
+FizzBuzz.prototype.isDivisibleByNumber = function(number,divisor){
   if (number % divisor === 0) {
     return true;
   }
   else {
     return false;
+  }
+}
+
+FizzBuzz.prototype.play = function(number){
+  if (this.isDivisibleByNumber(number, 3) === true) {
+    return "Fizz";
+  }
+  else if (this.is_divisible_by_number(number, 5) === true) {
+    return "Buzz";
+  }
+  else if (this.is_divisible_by_number(number, 15) === true) {
+    return "FizzBuzz";
+  }
+  else {
+    return number;
   }
 }
