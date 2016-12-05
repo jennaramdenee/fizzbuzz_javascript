@@ -39,14 +39,14 @@ FizzBuzz.prototype.isDivisibleByNumber = function(number,divisor){
 }
 
 FizzBuzz.prototype.play = function(number){
-  if (this.isDivisibleByNumber(number, 3) === true) {
+  if (this.isDivisibleByNumber(number, 15) === true) {
+    return "FizzBuzz";
+  }
+  else if (this.isDivisibleByNumber(number, 3) === true) {
     return "Fizz";
   }
-  else if (this.is_divisible_by_number(number, 5) === true) {
+  else if (this.isDivisibleByNumber(number, 5) === true) {
     return "Buzz";
-  }
-  else if (this.is_divisible_by_number(number, 15) === true) {
-    return "FizzBuzz";
   }
   else {
     return number;
