@@ -61,6 +61,15 @@ describe("FizzBuzz", function(){
       expect(fizzbuzz.play(3)).toEqual("Fizz");
     });
 
+    it("should return buzz if divisible by 5", function(){
+      expect(fizzbuzz.play(5)).toEqual("Buzz");
+    })
+    it("should return fizzbuzz if divisible by 15", function(){
+      expect(fizzbuzz.play(15)).toEqual("FizzBuzz");
+    })
+    it("should return 4 when passed 4", function(){
+      expect(fizzbuzz.play(4)).toEqual(4);
+    })
   });
 
 
